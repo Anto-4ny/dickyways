@@ -367,7 +367,8 @@
     </div>
 
     <div class="row g-4">
-      <!-- Destination Card -->
+      <!-- Visible Destinations -->
+      <!-- Nairobi -->
       <div class="col-lg-4 col-md-6">
         <div class="card border-0 shadow rounded">
           <div id="carouselNairobi" class="carousel slide" data-bs-ride="carousel">
@@ -396,8 +397,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Repeat the same structure for each destination -->
 
       <!-- Mombasa -->
       <div class="col-lg-4 col-md-6">
@@ -429,12 +428,92 @@
         </div>
       </div>
 
-      <!-- Continue with Diani, Maasai Mara, Naivasha, Kisumu etc. in similar format -->
-      
+      <!-- Diani -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow rounded">
+          <img src="img/diani.jpg" class="d-block w-100 rounded-top" alt="Diani">
+          <div class="card-body">
+            <h4 class="card-title">Diani</h4>
+            <p class="card-text">A tropical paradise with turquoise waters, coral reefs, and luxury resorts along the Indian Ocean.</p>
+            <div class="d-flex justify-content-between">
+              <a href="destination.html?place=diani" class="btn btn-primary">View Photos</a>
+              <a href="destinations.html?place=diani" class="btn btn-outline-dark">View All Places</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maasai Mara -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow rounded">
+          <img src="img/maasai.jpg" class="d-block w-100 rounded-top" alt="Maasai Mara">
+          <div class="card-body">
+            <h4 class="card-title">Maasai Mara</h4>
+            <p class="card-text">Home of the Great Migration and the Big Five, offering unmatched safari adventures.</p>
+            <div class="d-flex justify-content-between">
+              <a href="destination.html?place=maasai-mara" class="btn btn-primary">View Photos</a>
+              <a href="destinations.html?place=maasai-mara" class="btn btn-outline-dark">View All Places</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Naivasha -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow rounded">
+          <img src="img/naivasha.jpg" class="d-block w-100 rounded-top" alt="Naivasha">
+          <div class="card-body">
+            <h4 class="card-title">Naivasha</h4>
+            <p class="card-text">A peaceful escape with lakeside lodges, boat rides, and Hell’s Gate National Park nearby.</p>
+            <div class="d-flex justify-content-between">
+              <a href="destination.html?place=naivasha" class="btn btn-primary">View Photos</a>
+              <a href="destinations.html?place=naivasha" class="btn btn-outline-dark">View All Places</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kisumu -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow rounded">
+          <img src="img/kisumu.jpg" class="d-block w-100 rounded-top" alt="Kisumu">
+          <div class="card-body">
+            <h4 class="card-title">Kisumu</h4>
+            <p class="card-text">Enjoy Lake Victoria views, hippo spotting, and rich Luo culture in Kenya’s western gem.</p>
+            <div class="d-flex justify-content-between">
+              <a href="destination.html?place=kisumu" class="btn btn-primary">View Photos</a>
+              <a href="destinations.html?place=kisumu" class="btn btn-outline-dark">View All Places</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden destinations -->
+    <div class="row g-4 mt-4 d-none" id="moreDestinations">
+      <!-- Add more destinations here if needed -->
+      <div class="col-12 text-center">
+        <p class="text-muted">More destinations coming soon...</p>
+      </div>
+    </div>
+
+    <!-- Discover More Button -->
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-primary px-4 py-2" onclick="showMoreDestinations()">Discover More</button>
     </div>
   </div>
 </div>
 <!-- Destination End -->
+
+<!-- JS Script -->
+<script>
+  function showMoreDestinations() {
+    const more = document.getElementById('moreDestinations');
+    more.classList.remove('d-none');
+    event.target.style.display = 'none';
+  }
+</script>
+
 
 
 
@@ -1305,4 +1384,5 @@
     </body>
 
 </html>
+
 
